@@ -1,3 +1,8 @@
+#gspread documentation:
+#http://www.indjango.com/access-google-sheets-in-python-using-gspread/
+#
+#You will probably need to 'pip install gspread' to get this working  
+
 #!/usr/bin/python
 
 #Setting up our Google Spreadsheet interface
