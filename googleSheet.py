@@ -26,6 +26,7 @@ worksheet.update_cell(rowIndex,1,'Free room!') #Testing that we have an empty ro
 
 ##################################################################################
 #Searching for a particular server based on MAC 
+#Replace CDDE w/ what we find
 cellSearchResult = worksheet.findall("CDDE")
 
 #Update one cell to the right 
@@ -34,7 +35,7 @@ worksheet.update_cell(cellSearchResult[0].row,cellSearchResult[0].col+1,'To the 
 
 ##################################################################################
 #On restart, search spreadsheet to see if the MAC has been configured & at what step
-cellSearchResult = worksheet.findall("CDDE")
+#cellSearchResult = worksheet.findall("CDDE")
 
 #If it hasn't been found, then we are free to write it to a new row
 if not cellSearchResult: 
